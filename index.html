@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            margin: 5px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <div class="form-group">
+            <label for="totalMarks">Total Marks:</label>
+            <input type="number" id="totalMarks" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="marksObtained">Marks Obtained:</label>
+            <input type="number" id="marksObtained" min="0" required>
+        </div>
+        <div class="form-group">
+            <button onclick="calculateGrade()">Calculate Grade</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <h2>a is repeats until a specified condition evaluates to false.</h2>
+    <h2>b is asserts that the current position in the string is a word boundary.</h2>
+    <h2>result is a JavaScript ArrayBuffer containing binary data.</h2>
+    <button onclick="showMultiplicationTable()">Show Multiplication Table</button>
+    <script src="app.js"></script>
+</body>
+</html>
